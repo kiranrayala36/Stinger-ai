@@ -1,23 +1,151 @@
 {
-  "name": "studai",
+  "name": "stingerai",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "doctor": "npx expo-doctor || echo \"Warnings present but continuing\""
   },
   "dependencies": {
-    "expo": "~53.0.6",
+    "@craftzdog/react-native-buffer": "^6.0.5",
+    "@expo/config-plugins": "~10.0.0",
+    "@react-native-async-storage/async-storage": "2.1.2",
+    "@react-native-community/blur": "^4.4.1",
+    "@react-native-community/datetimepicker": "8.3.0",
+    "@react-native-masked-view/masked-view": "^0.3.2",
+    "@react-native-picker/picker": "^2.11.0",
+    "@react-navigation/bottom-tabs": "^7.3.12",
+    "@react-navigation/native": "^7.1.8",
+    "@react-navigation/native-stack": "^7.3.12",
+    "@react-navigation/stack": "^7.3.1",
+    "@supabase/supabase-js": "2.31.0",
+    "@types/react-navigation": "^3.0.8",
+    "axios": "^1.9.0",
+    "date-fns": "4.1.0",
+    "events": "^3.3.0",
+    "expo": "^55.0.2",
+    "expo-auth-session": "^6.1.5",
+    "expo-av": "~15.1.4",
+    "expo-build-properties": "^0.14.6",
+    "expo-clipboard": "~7.1.4",
+    "expo-constants": "~17.1.6",
+    "expo-dev-client": "~5.1.8",
+    "expo-device": "^7.1.4",
+    "expo-doctor": "^1.13.3",
+    "expo-document-picker": "~13.1.5",
+    "expo-font": "~13.3.1",
+    "expo-image-picker": "~16.1.4",
+    "expo-linear-gradient": "~14.1.4",
+    "expo-linking": "^7.1.5",
+    "expo-notifications": "~0.31.1",
+    "expo-print": "~14.1.4",
+    "expo-sharing": "~13.1.5",
     "expo-status-bar": "~2.2.3",
+    "expo-updates": "~0.28.13",
+    "expo-web-browser": "^14.1.6",
+    "metro": "0.82.0",
+    "metro-config": "0.82.0",
+    "metro-core": "0.82.0",
+    "metro-resolver": "0.82.0",
+    "metro-runtime": "0.82.0",
+    "process": "0.11.10",
     "react": "19.0.0",
-    "react-native": "0.79.2"
+    "react-native": "0.79.2",
+    "react-native-blob-util": "^0.22.0",
+    "react-native-calendars": "^1.1312.0",
+    "react-native-crypto": "^2.2.0",
+    "react-native-draggable-flatlist": "^4.0.3",
+    "react-native-elements": "^3.4.3",
+    "react-native-fs": "^2.20.0",
+    "react-native-gesture-handler": "~2.24.0",
+    "react-native-get-random-values": "^1.11.0",
+    "react-native-paper": "^5.14.0",
+    "react-native-pdf": "^6.7.7",
+    "react-native-pell-rich-editor": "^1.9.0",
+    "react-native-reanimated": "~3.17.4",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.10.0",
+    "react-native-svg": "15.11.2",
+    "react-native-svg-transformer": "^1.5.1",
+    "react-native-url-polyfill": "^2.0.0",
+    "react-native-webview": "^13.13.5",
+    "url": "^0.11.4",
+    "use-latest-callback": "^0.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@react-native-community/cli": "^18.0.0",
+    "@shopify/flash-list": "^1.6.4",
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.7",
+    "@types/jest": "^29.5.14",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.15.17",
     "@types/react": "~19.0.10",
+    "@types/react-native-dotenv": "^0.2.2",
+    "@types/uuid": "^10.0.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "dotenv": "^16.5.0",
+    "jest": "^29.7.0",
+    "jest-expo": "^53.0.5",
+    "metro": "0.82.0",
+    "metro-config": "0.82.0",
+    "metro-core": "0.82.0",
+    "metro-resolver": "0.82.0",
+    "metro-runtime": "0.82.0",
+    "react-native-dotenv": "^3.4.11",
     "typescript": "~5.8.3"
+  },
+  "resolutions": {
+    "@supabase/realtime-js": "2.7.3",
+    "metro": "0.82.0",
+    "metro-resolver": "0.82.0",
+    "metro-config": "0.82.0",
+    "metro-core": "0.82.0",
+    "metro-runtime": "0.82.0"
+  },
+  "overrides": {
+    "@supabase/realtime-js": "2.7.3",
+    "metro": "0.82.0",
+    "metro-resolver": "0.82.0",
+    "metro-config": "0.82.0",
+    "metro-core": "0.82.0",
+    "metro-runtime": "0.82.0"
+  },
+  "expo": {
+    "doctor": {
+      "checkPackageVersions": false,
+      "packagesVersionCheck": {
+        "ignoredPackages": [
+          "@expo/config-plugins",
+          "metro",
+          "metro-resolver",
+          "metro-config"
+        ],
+        "checkNativeModules": false,
+        "enabled": false
+      },
+      "reactNativeDirectoryCheck": {
+        "exclude": [
+          "@craftzdog/react-native-buffer",
+          "react-native-crypto",
+          "react-native-fs",
+          "react-native-pell-rich-editor"
+        ],
+        "listUnknownPackages": false
+      },
+      "configPathCheck": {
+        "enabled": false
+      }
+    },
+    "gradleFixes": {
+      "notes": "Updated build.gradle files in react-native-tcp and react-native-fs to use modern implementation instead of compile syntax and updated SDK versions"
+    }
   },
   "private": true
 }
