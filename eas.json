@@ -29,9 +29,9 @@
         "buildConfiguration": "Release"
       },
       "env": {
-        "EXPO_PUBLIC_SUPABASE_URL": "https://djdyzyjgxcnwlvmvildd.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRqZHl6eWpneGNud2x2bXZpbGRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcwMjk0MDcsImV4cCI6MjA2MjYwNTQwN30.R0XluFLRDLzzOo62NF2gGDI9N1NHPt1MJ1ljs0tTkSg",
-        "OPENROUTER_API_KEY": "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"
+        "EXPO_PUBLIC_SUPABASE_URL": "${process.env.EXPO_PUBLIC_SUPABASE_URL}",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "${process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY}",
+        "OPENROUTER_API_KEY": "${process.env.OPENROUTER_API_KEY}"
       },
       "developmentClient": false,
       "channel": "beta"
@@ -51,9 +51,9 @@
         "gradleCommand": ":app:assembleRelease"
       },
       "env": {
-        "EXPO_PUBLIC_SUPABASE_URL": "https://djdyzyjgxcnwlvmvildd.supabase.co",
-        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRqZHl6eWpneGNud2x2bXZpbGRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcwMjk0MDcsImV4cCI6MjA2MjYwNTQwN30.R0XluFLRDLzzOo62NF2gGDI9N1NHPt1MJ1ljs0tTkSg",
-        "OPENROUTER_API_KEY": "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"
+        "EXPO_PUBLIC_SUPABASE_URL": "${process.env.EXPO_PUBLIC_SUPABASE_URL}",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "${process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY}",
+        "OPENROUTER_API_KEY": "${process.env.OPENROUTER_API_KEY}"
       },
       "channel": "production-apk"
     }
