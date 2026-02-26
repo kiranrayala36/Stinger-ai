@@ -396,25 +396,4 @@ By following these maintenance practices, you'll ensure your StingerAI applicati
 
 Built with ❤️ by the StingerAI Team 
 
-## Admin Tools
-
-StingerAI includes a separate administrative application for managing and testing the main app. This admin app has been separated into its own workspace to keep sensitive administrative functions away from the regular user interface.
-
-### Accessing the Admin App
-
-The admin app has been moved to a separate workspace. To use it:
-
-1. Extract the `stinger-admin-complete.zip` file to a separate directory
-2. Follow the setup instructions in the stinger-admin README after extracting the zip file
-
-### Admin Features
-
-- **Push Notification Testing**: Test sending push notifications to your Expo Go app
-- **Admin Dashboard**: Admin interface for managing the app
-- **Command-line Tools**: Utilities for backend maintenance
-- **Supabase Functions**: Edge functions for backend services
-- **User Management**: Tools for finding and managing users
-
-For more information, see the stinger-admin README after extracting the zip file. #   S t i n g e r - a i  
- #   S t i n g e r - a i  
  
